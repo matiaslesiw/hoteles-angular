@@ -1,0 +1,30 @@
+<div class="container margen">
+
+  <div class="row margenDer">
+    <div class="col-4 "></div>
+    <app-hotel [host]="host"></app-hotel>
+  </div>
+
+
+  <div class="row ">
+
+    <div class="col-sm-4">
+      <app-habitaciones [habitaciones]="host.habitaciones" [reserva]="reserva"></app-habitaciones>
+    </div>
+    <div class="col-sm-4">
+      <app-servicios [servicios]="host.servicios" [reserva]="reserva"></app-servicios>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-16">
+
+      <app-reserva [host]="host" [reserva]="reserva"></app-reserva>
+    </div>
+  </div>
+
+
+
+
+
+</div>

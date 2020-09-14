@@ -1,0 +1,35 @@
+<div class="media container" style="margin:40px">
+  <div class="row">
+    <div class="col-sm">
+      <img class="d-flex mr-5" src="{{reserva.host.imagen}}" alt="Generic placeholder image" style="width: 160px">
+      <div class="media-body">
+        <div class="row">
+          <div class="col"><br>
+            <h2 class="mt-0 font-weight-bold float-left">{{reserva.host.nombre}} </h2>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fas fa-star {{dorado(1)}}" ng-repeat=5></i>
+            <i class="fas fa-star {{dorado(2)}}" ng-repeat=5></i>
+            <i class="fas fa-star {{dorado(3)}}" ng-repeat=5></i>
+            <i class="fas fa-star {{dorado(4)}}" ng-repeat=5></i>
+            <i class="fas fa-star {{dorado(5)}}" ng-repeat=5></i>
+          </div>
+          <br>
+          <div><i class="fas fa-map-marker-alt"></i> {{reserva.host.provincia}}</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm">
+        <h4>Desde: {{reserva.desde}}</h4>
+        <h4>Hasta: {{reserva.hasta}}</h4><br>
+        <h4>{{reserva.dias}} Noches</h4><br>
+        <h2><b>$  {{reserva.totalPagar}}</b></h2>
+        <br><br>
+        <button *ngIf="darBaja()" type="button" class="btn btn-danger" (click)="baja()">Cancelar</button>
+
+    </div>
+  </div>
+</div>

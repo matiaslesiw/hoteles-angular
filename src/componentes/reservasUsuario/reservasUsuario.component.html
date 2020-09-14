@@ -1,0 +1,13 @@
+<div class="margen" >
+    <table class=" table table-responsive table-hover">
+      <thead>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reserva of usuario.reservas"  class="animate-repeat">
+          <td>
+            <app-estadia [reserva]="reserva" [usuario]="usuario"></app-estadia>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

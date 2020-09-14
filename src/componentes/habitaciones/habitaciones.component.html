@@ -1,0 +1,28 @@
+  
+    <div class="border">
+     
+    <div class="margen">
+    <table class=" table table-responsive table-borderless">
+        <thead><br>
+         <h3 >Habitaciones</h3> 
+        </thead>
+        <tbody>
+         
+          <tr *ngFor="let habitacion of habitaciones; let i = index">
+            <td>
+     
+                   
+                      <input class="form-check-input" type="checkbox" name="habs" id="i" [(ngModel)]="habitacion.ok">
+                      <label class="form-check-label" for="exampleRadios1">{{habitacion.desc}}</label>
+                      <label class="margen float-right">$ {{habitacion.precio}}</label>
+                      {{habitacionSeleccionada}}
+
+                   
+              </td>      
+              
+           
+          </tr>
+        </tbody>
+      </table></div></div>
+      
+      

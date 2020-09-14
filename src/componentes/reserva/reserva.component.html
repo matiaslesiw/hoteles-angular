@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+
+    <label for="example-date-input" class="col-8 col-form-label">Fecha Desde</label>
+    <div class="form-group col-md-8">
+      <input class="form-control" type="date" value="2019-08-19" id="desde" [(ngModel)]="reserva.desde" min="{{minimo}}"
+        max="{{maximo}}">
+    </div>
+
+    <label for="example-date-input" class="col-8 col-form-label">Fecha Hasta</label>
+    <div class="form-group col-md-8 ">
+      <input class="form-control" type="date" value="2019-08-19" id="hasta" [(ngModel)]="reserva.hasta" min="{{reserva.desde}}"
+        max="{{maximo}}">
+
+
+    </div>
+  
+
+
+
+    <div class="col-lg-8">
+      <br>
+      <h4>$ {{reserva.precioTotal}}</h4>
+    </div>
+
+    <div class="col-lg-16 margenIzq">
+      <button  *ngIf="validacion()" mdbBtn type="submit" gradient="blue" rounded="true" (click)="reservar()"  mdbWavesEffect>Reservar</button>
+    </div>
+
+  </div>

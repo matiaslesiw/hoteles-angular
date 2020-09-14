@@ -1,0 +1,26 @@
+
+
+<div class="media" style="margin:40px">
+  <img class="d-flex mr-5" src="{{host.imagen}}" alt="Generic placeholder image" style="width: 160px">
+  <div class="media-body">
+    <div class="row">
+      <div class="col">
+        <h4 class="mt-0 font-weight-bold float-left">{{host.nombre}} </h4>
+        <h4 class="float-center" style="margin-left:300px">$ {{host.precioMinimo}}</h4>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <i class="fas fa-star {{dorado(1)}}" ng-repeat=5 ></i>
+        <i class="fas fa-star {{dorado(2)}}" ng-repeat=5 ></i>
+        <i class="fas fa-star {{dorado(3)}}" ng-repeat=5 ></i>
+        <i class="fas fa-star {{dorado(4)}}" ng-repeat=5 ></i>
+        <i class="fas fa-star {{dorado(5)}}" ng-repeat=5 ></i>
+
+
+      </div>
+      <br>
+      <div><i class="fas fa-map-marker-alt"></i> {{host.provincia}}</div>
+    </div>
+  </div>  

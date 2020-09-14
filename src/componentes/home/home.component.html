@@ -1,0 +1,13 @@
+<div class="margen" >
+  <table class=" table table-responsive table-hover">
+    <thead>
+    </thead>
+    <tbody>
+      <tr *ngFor="let host of hosts"  class="animate-repeat" [routerLink]="['/hotel', host.id]">
+        <td>
+          <app-hotel [host]="host"></app-hotel>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
